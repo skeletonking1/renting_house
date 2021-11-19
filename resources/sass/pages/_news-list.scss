@@ -1,0 +1,134 @@
+.news-header {
+  .slide-number {
+    left: 36px!important;
+    font-size: 16px!important;
+  }
+}
+.news-list {
+  background-image: url(../../images/bg_top_news.png);
+  &-content {
+    margin-top: 80px;
+    table {
+      width: 680px;
+      margin: auto;
+      text-align: left;
+      tr {
+        td {
+          &:first-child {
+            font-size: 11px;
+            letter-spacing: 0.15em;            
+            @include font-din(regular);
+            border-right: 1px solid #00000050;
+            min-width: 104px;
+          }
+          &:last-child {
+            width: 100%;
+            padding: 8px 0 8px 40px;
+            a {
+              text-decoration: underline;
+              span {
+                @include font-ud(medium);
+                font-size: 13px;
+                letter-spacing: 0.1em;
+                display: -webkit-box;
+                -webkit-line-clamp: 1;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+              }
+            }        
+          }
+        }
+        &:first-child {
+          td {
+            padding-top: 0!important;
+          }
+        }
+        &:last-child {
+          td {
+            padding-bottom: 0!important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1250px) {
+  .news-list {
+    &-content {
+      margin-top: 80rem;
+      table {
+        width: 680rem;
+        tr {
+          td {
+            &:first-child {
+              font-size: 11rem;
+              min-width: 104rem;
+            }
+            &:last-child {
+              padding: 8rem 0 8rem 40rem;
+              a {
+                span {
+                  font-size: 13rem;
+                }
+              }        
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  .news-header {
+    .slide-number {
+      left: 17rem!important;
+      font-size: 16px!important;
+    }
+  }
+  .news-list {
+    background-image: url(../../images/bg_top_news_sp.png);
+    &-content {
+      margin-top: 67px;
+      table {
+        width: 100%;
+        tr {
+          display: block;
+          margin-top: 26px;
+          td {
+            display: block;
+            &:first-child {
+              font-size: 11px;
+              border-right: unset;
+              min-width: unset;
+            }
+            &:last-child {
+              width: 100%;
+              padding: 10px 0;
+              a {
+                span {
+                  @include font-ud(regular);
+                  font-size: 13px;
+                  line-height: 28px;
+                  -webkit-line-clamp: 2;
+                }
+              }        
+            }
+          }
+          &:first-child {
+            margin-top: 0px;
+            td {
+              padding-top: 10px!important;
+            }
+          }
+          &:last-child {
+            td {
+              padding-bottom: 10px!important;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,367 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the home page.
+// -----------------------------------------------------------------------------
+
+.top {
+  .ctr-btn {
+    @include font-din(bold);
+    font-size: 10px;
+    letter-spacing: 0.05em;
+    color: #00000050;
+    width: 39px;
+    height: 16px;
+    justify-content: space-between;
+    position: absolute;
+    @include transform(translateY(-50%));
+    top: 50%;
+    z-index: 999;
+    img {
+      width: 8px;
+    }
+    &#moveLeft {
+      left: 124px;
+    }
+    &#moveRight {
+      right: 124px;
+    }
+  }
+  .slide {
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;  
+    .fp-tableCell {
+      vertical-align: top;
+    }
+    .content {
+      padding-top: 180px;
+      height: 100vh;
+      overflow-y: scroll;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+  }
+  .sec-ttl {
+    font-size: 35px;
+    letter-spacing: 0.05em;
+    @include font-din(demibold);
+  }
+  .hero {
+    background-size: cover;
+    background-repeat: no-repeat;
+    &:first-child {
+      background-image: url(../../images/bg_top01.png);
+    }
+    &:nth-child(2) {
+      background-image: url(../../images/bg_top02.png);
+    }
+    &:nth-child(3) {
+      background-image: url(../../images/bg_top03.png);
+    }
+    &:nth-child(4) {
+      background-image: url(../../images/bg_top04.png);
+    }
+    &-content {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      width: 823px;
+      height: 140.5px;
+      margin: 500px auto 0;
+      h1 {
+        font-size: 32px;
+        letter-spacing: 0.05em;
+        line-height: 48px;
+        text-align: right;
+        @include font-ud(demibold);
+        padding-right: 80px;
+        border-right: 1px solid #00000025;
+        width: 50%;
+      }
+      p {
+        font-size: 13px;
+        letter-spacing: 0.1em;
+        line-height: 28px;
+        text-align: left;
+        padding-left: 80px;
+        width: 50%;
+        @include font-ud(regular);
+      }
+    }
+  }
+  
+  .support {
+    background-image: url(../../images/bg_top_support.png);
+    .link-group {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 192px;
+      a {
+        font-size: 20px;
+        letter-spacing: 0.1em;
+        font-family: "felix";
+        width: 240px;
+        height: 240px;
+        background-image: url(../../images/bg_top_support_link.png);
+        background-size: 100% 100%;
+        margin: 0 22px;
+      }
+    }
+  }
+  .philosophy {
+    background-image: url(../../images/bg_top_philosophy.png);
+    .sec-ttl {
+      font-family: 'felix';
+      font-weight: normal;
+      font-size: 32px;
+      color: $white;
+    }
+    &-content {
+      width: 50%;
+      float: right;
+      clear: right;
+      padding: 76px 0 0 30px;
+      h3 {
+        font-size: 22px;
+        letter-spacing: 0.1em;
+        line-height: 36px;
+        @include font-ud(demibold);
+      }
+      p {
+        font-size: 13px;
+        letter-spacing: 0.1em;
+        line-height: 28px;
+        font-family: 'felix';
+        margin-top: 13px;
+      }
+      a {
+        width: 64px;
+        height: 64px;
+        border: 1px solid #00000050;
+        border-radius: 50%;
+        float: right;
+        margin-right: 24px;
+        margin-top: 140px;
+        img {
+          width: 20px;
+        }
+      }
+    }
+  
+  }
+  
+  .sec-link-btn {
+    width: 64px;
+    height: 64px;
+    border: 1px solid #00000050;
+    border-radius: 50%;
+    float: right;
+    margin-right: 24px;
+    margin-top: 140px;
+    img {
+      width: 20px;
+    }
+  }
+  
+  .news {
+    background-image: url(../../images/bg_top_news.png);
+    &-content {
+      margin-top: 67px;
+    }
+  }
+  
+  .home-article {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 72px;
+    &-left {
+      width: 50%;
+      h3 {
+        font-size: 22px;
+        letter-spacing: 0.1em;
+        @include font-ud(demibold);
+        text-align: left;
+        margin-left: 120px;
+      }
+      img {
+        width: 260px;
+        height: 140px;
+        object-fit: cover;
+        margin-top: 20px;
+        float: right;
+      }
+    }
+    &-right {
+      width: 50%;
+      padding-left: 24px;
+      .news-date {
+        font-size: 11px;
+        letter-spacing: 0.15em;
+        @include font-din(regular);
+      }
+      .article-logo {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+        margin-top: 35px;
+        img {
+          width: 92.11px;
+          height: 32px;
+          object-fit: cover;
+          margin-right: 33px;
+        }
+        span {
+          font-size: 13px;
+          letter-spacing: 0.15em;
+          @include font-tbud();
+        }
+      }
+      .article-content {
+        margin-top: 20px;
+        div {
+          margin-top: 8px;
+          span {
+            display: inline-flex;
+            align-items: center;
+            font-size: 10px;
+            padding-right: 11px;
+            height: 24px;
+            @include font-ud(medium);
+            background: linear-gradient(to left,#fff48090 0%, rgba(255, 247, 153, 0) 100%);
+          }
+        }
+      }
+  
+    }
+  }
+  
+  .service {
+    color: white;
+    background-image: url(../../images/bg_top_service.png);
+    .scroll-btn {
+      color: white;
+    }
+    &-content {
+      margin-top: 47px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      flex: 1 0 21%;
+      img {
+        width: 214px;
+        height: 214px;
+        object-fit: cover;
+        margin-top: 21px;
+      }
+    }
+  }
+  
+  .case {
+    background-image: url(../../images/bg_top_case.png);
+    .sec-ttl {
+      font-family: 'felix';
+      font-weight: normal;
+    }
+    .article-logo {
+      margin-top: 54px!important;
+    }
+  }
+  .flow {
+    background-image: url(../../images/bg_top_flow.png);
+    .sec-ttl {
+      font-family: 'felix';
+      font-weight: normal;
+    }
+    .scroll-btn {
+      color: white;
+    }
+    .article-logo {
+      margin-top: 54px!important;
+    }
+    &-content {
+      display: flex;
+      margin-top: 102px;
+      justify-content: space-between;
+      padding: 0 56px;
+    }
+    &-wrap {
+      width: 240px;
+      height: 340px;
+      border-radius: 8px;
+      background: #fff;
+      padding: 0 40px;
+      h3 {
+        @include font-ud(demibold);
+        font-size: 22px;
+        letter-spacing: 0.1em;
+        white-space: nowrap;
+        span {
+          @include font-ud(medium);
+        }
+      }
+      p {
+        font-size: 13px;
+        letter-spacing: 0.1em;
+        line-height: 28px;
+        @include font-ud(medium);
+        margin-top: 17px;
+      }
+    }
+  }
+  
+  .blog {
+    background-image: url(../../images/bg_top_blog.png);
+    &-content {
+      margin-top: 27px;
+      display: flex;
+      flex-wrap: wrap;
+      flex: 1 0 33%;
+      justify-content: space-between;
+    }
+    &-wrap {
+      width: 240px;
+      margin: 40px 0;
+      .blog-inner {
+        background-image: url(../../images/top_blog_border.png);
+        background-position-x: left;
+        margin-top: 24px;
+        height: 89px;
+        padding: 3px 0 0 16px;
+      }
+      .blog-info {
+        display: flex;
+        justify-content: space-between;
+        .blog-category {
+          width: 58px;
+          height: 26px;
+          border-radius: 0px 4px 4px 0px;
+          background: #4c92d9;
+          font-family: "Hiragino UD Sans Std";
+          font-weight: normal;
+          font-size: 12px;
+          color: white;
+          padding-left: 5px;
+          justify-content: flex-start;
+        }
+        .blog-date {
+          font-size: 12px;
+          @include font-tbud(regular);
+          color: #506285;
+        }
+      }
+      .blog-ttl {
+        font-size: 13px;
+        letter-spacing: 0.1em;
+        line-height: 28px;
+        @include font-ud(medium);
+        margin-top: 19px;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+    }
+  }
+}

@@ -1,0 +1,111 @@
+.blog-list {
+  .blog-list-ttl {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h1 {
+      font-weight: normal;
+      font-size: 32px;
+      letter-spacing: 0.05em;      
+      font-family: 'felix';
+    }
+    .category-group {
+      display: flex;
+      align-items: center;
+      a {
+        padding: 0 16px;
+        font-size: 15px;
+        letter-spacing: 0.1em;
+        display: inline-flex;     
+        @include font-ud(medium);
+        &.active {
+          background: linear-gradient(rgba(194, 149, 87, 0) 0%, #f0ce9e 29.56%, #e7d7bf 71.92%, rgba(186, 150, 96, 0) 100%);
+        }
+      }
+      span {
+        height: 14px;
+        border-left: 1px solid #000;
+        display: inline-flex;
+      }
+    }
+  }
+  .search-result {
+    .investment.article-blog-category {
+      border-radius: 0px 4px 4px 0px!important;
+      background: #4c92d9!important;      
+      color: $white!important;
+      font-weight: normal;
+      font-size: 12px!important;
+      line-height: 29px!important;
+      font-family: 'felix';      
+      padding: 5px 18px 5px 5px!important;
+    }
+  }
+}
+
+@media (max-width: 1250px) {  
+  .blog-list {
+    .blog-list-ttl {
+      h1 {
+        font-size: 32rem;
+      }
+      .category-group {
+        a {
+          padding: 0 16rem;
+          font-size: 15rem;
+        }
+        span {
+          height: 14rem;
+        }
+      }
+    }
+    .search-result {
+      .investment.article-blog-category {
+        border-radius: 0rem 4rem 4rem 0rem!important;
+        font-size: 12rem!important;
+        line-height: 29rem!important;
+        padding: 5rem 18rem 5rem 5rem!important;
+      }
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  .blog-list {
+    .blog-list-ttl {
+      display: block;
+      h1 {
+        font-size: 32px;
+      }
+      .category-group {
+        display: flex;
+        align-items: center;
+        margin-top: 65px;
+        overflow-x: auto;
+        width: 100%;
+        padding-bottom: 10px;
+        a {
+          padding: 0 16px;
+          font-size: 15px;
+          white-space: nowrap;
+          &.active {
+            background: linear-gradient(rgba(194, 149, 87, 0) 0%, #f0ce9e 29.56%, #e7d7bf 71.92%, rgba(186, 150, 96, 0) 100%);
+          }
+        }
+        span {
+          height: 14px;
+          border-left: 1px solid #000;
+        }
+      }
+    }
+    .search-result {
+      .investment.article-blog-category {
+        border-radius: 0px 4px 4px 0px!important;
+        font-size: 12px!important;
+        line-height: 29px!important;
+        padding: 5px 18px 5px 5px!important;
+      }
+    }
+  }
+}
+

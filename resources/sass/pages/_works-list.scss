@@ -1,0 +1,232 @@
+.works-header {
+  .slide-number {
+    left: 36px!important;
+    font-size: 16px!important;
+  }
+}
+
+.works-list {
+  background-image: url(../../images/bg_top_case.png)!important;
+  .content {
+    width: 900px;
+  }
+  .works-search-box {
+    border-radius: 8px;
+    background: #506285;
+    color: $white;
+    padding-top: 25px;
+    margin-top: 76px;  
+    input {
+      position: absolute;
+      opacity: 0;
+      z-index: -1;
+      &:checked {
+        + .tab-label {
+          &::after {
+            background-image: url(../../images/ico_cross.png);
+          }
+        }
+        ~ .search-box-content {
+          max-height: 100vh;
+          .search-list {
+            opacity: 1;
+          }
+        }
+      }
+    }
+    .tab-label {
+      font-family: Yu Gothic;
+      font-weight: bold;
+      font-size: 25px;
+      line-height: 40px;
+      text-align: center;  
+      cursor: pointer;
+      position: relative;
+      display: block;
+      &::after {
+        content: "";
+        position: absolute;
+        right: 40px;
+        top: 5px;
+        width: 24px;
+        height: 24px;
+        background-image: url(../../images/ico_plus.png);
+        transition: all .35s;
+      }
+    }
+    .search-box-content {
+      max-height: 86px;
+      transition: all .35s;
+      overflow: hidden;
+      padding-bottom: 40px;
+    }
+    .search-category {
+      margin-top: 30px;
+      display: flex;
+      div {
+        width: calc(100% / 3);
+        font-family: Yu Gothic;
+        font-weight: bold;
+        font-size: 16px;
+        text-align: center;        
+        &:not(:last-child) {
+          border-right: 1px solid $white;
+        }
+      }
+    }
+    .search-list {
+      opacity: 0;
+      transition: all 0.35s;
+      display: flex;
+      margin-top: 10px;
+      div {
+        flex: 1 0 33%;
+        padding-left: 80px;
+        text-align: left;
+      }
+      .radio-container {
+        margin-top: 11px;
+        display: block;
+        position: relative;
+        padding: 4px 45px;
+        cursor: pointer;
+        font-family: Yu Gothic;
+        font-weight: 500;
+        font-size: 16px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        /* Create a custom radio button */
+        .checkmark {
+          position: absolute;
+          top: 2px;
+          left: 0;
+          width: 24px;
+          height: 24px;
+          background: #f0ebe9;
+          border: 2px solid $white;
+          border-radius: 50%;
+        }
+        input {
+          position: absolute;
+          opacity: 0;
+          cursor: pointer;
+          /* When the radio button is checked, add a blue background */
+          &:checked ~ .checkmark {
+            background-color: #4c92d9;
+          }
+        }
+      }
+    }
+    .btn-container button {
+      width: 400px;
+      border: 1px solid $white;
+      margin-top: 35px;
+      margin-bottom: 0;
+      &:hover {
+        background: #4c92d9;
+      }
+    }
+  }
+  .search-result {
+    padding: 0 50px;
+    margin-top: 75px;
+    h1 {
+      font-weight: normal;
+      font-size: 22px;
+      letter-spacing: 0.1em;
+      line-height: 36px;
+      text-align: center;
+    }
+    article {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      width: 840px;
+      margin: auto;
+      position: relative;
+      div {
+        width: 50%;
+        text-align: left;
+      }
+      .article-left {
+        padding-top: 72px;
+        border-right: 1px solid #00000050;
+        h2 {
+          font-weight: normal;
+          font-size: 22px;
+          letter-spacing: 0.1em;
+          line-height: 36px;
+          font-family: 'felix';
+        }
+        img {
+          width: 368px;
+          height: 232px;
+          object-fit: cover;          
+          margin-top: 32px;
+          float: right;
+        }
+      }
+      .article-right {
+        padding-left: 32px;
+        padding-top: 72px;
+        .article-date {
+          font-size: 11px;
+          letter-spacing: 0.15em;
+          line-height: 30px;
+          @include font-din(regular);
+          margin-bottom: 39px;
+        }
+        .investment {
+          padding: 4px 11px;
+          border-radius: 4px;
+          background: #506285;
+          font-size: 14px;
+          text-align: center;
+          @include font-tbud(bold);
+          color: white;
+          display: inline;
+        }
+        p {
+          font-size: 13px;
+          letter-spacing: 0.1em;
+          line-height: 28px;          
+          font-family: felix;
+          margin-top: 24px;
+        }
+        .sec-link-btn {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          margin-top: 0;
+          margin-right: 0;
+        }
+      }
+      &:first-child {
+        margin-top: 72px;
+        .article-left {
+          padding-top: 0;
+        }
+        .article-right {
+          padding-top: 0;
+        }
+      }
+      &:last-child {
+        .article-left {
+          padding-bottom: 72px;
+        }
+        .article-right {
+          padding-bottom: 72px;
+          .sec-link-btn {
+            bottom: 72px;
+          }
+        }
+      }
+    }
+    .article-pagination {
+      margin: 80px 0;
+    }
+
+  }
+}

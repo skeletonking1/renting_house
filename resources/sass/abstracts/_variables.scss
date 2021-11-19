@@ -1,0 +1,42 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+
+
+$SourceHanSansBold: "SourceHanSansBold";
+$SourceHanSansRegular: "SourceHanSansRegular";
+$SourceHanSansHeavy: "SourceHanSansHeavy";
+$DinCondensedBold: "DINCondensedBold";
+$MontserratBold: "MontserratBold";
+
+$regular: 400;
+$medium: 500;
+$semibold: 600;
+$bold: 700;
+
+$white: #ffffff;
+$white85: rgba(255, 255, 255, 0.85);
+$white90: rgba(255, 255, 255, 0.9);
+$white35: rgba(255, 255, 255, 0.35);
+$cream: #FCF8ED;
+$yellow: #FFE26A;
+$yellow1: #EFDCA6;
+$red: #b92013;
+$red1: #B4312C;
+$green: #00B900;
+$textBlack: #333333;
+$gray: #7e7e7e;
+$darkGray: #747474;
+$black: #000000;
+$darkBlack: #222222;
+$lightBlack: #262525;
+$black35: rgba(0, 0, 0, 0.35);
+$transparent: transparent;
+
+$sm: 768px;
+$xl: 1400px;
+$max-width: 1160px;
+
+$spPaddingX: 3.85vw;
+$pcInnerX: 68vw;

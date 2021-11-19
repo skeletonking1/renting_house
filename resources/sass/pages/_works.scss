@@ -1,0 +1,129 @@
+.works {
+  &-sec {
+    width: 736px!important;
+    .works-info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 36px;
+      &-left {
+        display: flex;
+        align-items: flex-start;
+      }
+      .works-investment {
+        padding: 4px 11px;
+        border-radius: 4px;
+        background: #506285;
+        font-size: 14px;
+        text-align: center;
+        @include font-tbud(bold);
+        color: white;
+        display: inline;
+      }
+      .client-name {
+        font-weight: normal;
+        font-size: 22px;
+        letter-spacing: 0.1em;
+        line-height: 36px;        
+        font-family: 'felix';
+        margin-left: 24px;
+      }
+      .works-date {
+        font-size: 11px;
+        letter-spacing: 0.15em;        
+        @include font-din(regular);
+      }
+    }
+    figure {
+      margin-top: 40px;
+      img {
+        width: 100%;
+      }
+    }
+    .works-content {
+      border-radius: 8px;
+      background: $white;
+      padding: 20px 40px;
+      text-align: left;
+      margin-top: 40px;
+      h2 {
+        font-size: 15px;
+        letter-spacing: 0.1em;
+        @include font-ud(demibold);
+      } 
+      table {
+        margin-top: 15px;
+        tr {
+          td {
+            padding: 10px 0;
+            &:first-child {
+              font-size: 13px;
+              color: #506285;
+              @include font-ud(demibold);           
+            }
+            &:last-child {
+              font-weight: normal;
+              font-size: 15px;              
+              font-family: 'felix';
+              padding-left: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+  &-list-sec {
+    width: 816px!important;
+    padding-top: 28px;
+    .article {
+      display: flex;
+      align-items: flex-start;
+      margin: 52px 0;
+      &-left {
+        width: 50%;
+        img {
+          width: 100%;
+        }
+      }
+      &-right {
+        width: 50%;
+        padding: 105px 0 0 40px;
+        h1, h2 {
+          font-weight: normal;
+          font-size: 22px;
+          letter-spacing: 0.1em;
+          line-height: 36px;
+          font-family: 'felix';
+        }
+        p {
+          margin-top: 32px;
+          font-size: 13px;
+          letter-spacing: 0.1em;
+          line-height: 28px;
+          font-family: 'felix';          
+        }
+      }
+    }
+  }
+  &-social {
+    width: 816px!important;
+    padding: 79px 0 40px;
+    font-family: 'felix';
+    font-weight: normal;
+    h1, h2 {
+      font-size: 22px;
+      letter-spacing: 0.1em;
+      line-height: 36px;
+    }
+    p {
+      margin-top: 32px;
+      font-size: 13px;
+      letter-spacing: 0.1em;
+      line-height: 28px;
+      padding-left: 250px;
+    }
+    img {
+      margin-top: 104px;
+    }
+  }
+}

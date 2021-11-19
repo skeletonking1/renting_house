@@ -1,0 +1,26 @@
+.about-header {
+  .slide-number {
+    left: 36px!important;
+    font-size: 16px!important;
+  }
+}
+
+.about {
+  background-image: url(../../images/bg_top_blog.png)!important;
+  .sec-hero {
+    height: unset;
+  }
+  .content {
+    width: 900px;
+  }
+  .about-sec {
+    padding: 160px 0;
+    h1 {
+      font-size: 32px;
+      letter-spacing: 0.05em;      
+      font-family: 'felix';
+      font-weight: normal;
+      text-align: center;
+    }
+  }
+}

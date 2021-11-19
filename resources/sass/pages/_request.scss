@@ -1,0 +1,432 @@
+.request-header {
+  .slide-number {
+    left: 24px!important;
+    font-size: 16px!important;
+  }
+}
+
+.request {
+  background-image: url(../../images/bg_request.png);
+  .content {
+    width: 800px;
+  }
+}
+
+.request-address {
+  height: 80px;
+  border-radius: 8px;
+  background: #506285;
+  color: $white;
+  font-family: Yu Gothic;
+  font-weight: bold;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 76px;
+  span {
+    &:first-child {
+      margin: 0 20px;
+      font-size: 36px;
+    }
+    &:last-child {
+      font-weight: 500;
+    }
+  }
+}
+
+.request-form {
+  width: 700px;
+  margin: auto;
+  margin-top: 54px;
+  padding-bottom: 89px;
+  .input-group {
+    margin-top: 29px;
+    label {
+      font-size: 13px;
+      letter-spacing: 0.1em;
+      font-family: 'felix'; 
+    }
+    input {
+      width: 100%;
+      height: 52px;
+      border-radius: 26px;
+      background: #fff;
+      padding: 11px 24px;
+      margin-top: 9px;
+    }
+  }
+  .radio-group {
+    margin-top: 23px;
+    .radio-container {
+      margin-top: 19px;
+      display: block;
+      position: relative;
+      padding: 4px 45px;
+      cursor: pointer;
+      font-size: 13px;
+      letter-spacing: 0.1em;
+      font-family: 'felix';
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      /* Create a custom radio button */
+      .checkmark {
+        position: absolute;
+        top: 2px;
+        left: 0;
+        width: 24px;
+        height: 24px;
+        background: #f0ebe9;
+        border: 2px solid $white;
+        border-radius: 50%;
+      }
+      input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        /* When the radio button is checked, add a blue background */
+        &:checked ~ .checkmark {
+          background-color: #4c92d9;
+        }
+      }
+    }
+  }
+  .textarea-group {
+    label {
+      @include font-ud(medium);
+    }
+    textarea {
+      width: 100%;
+      height: 240px;
+      border-radius: 8px;
+      background: $white;
+      margin-top: 8px;
+      padding: 18px 24px;
+    }
+  }
+  .privacy {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 70px;
+    .radio-container {
+      display: inline-block;
+      margin-top: 0;
+      padding: 4px 37px;
+    }
+    a {
+      text-decoration: underline;
+      color: #506285;
+    }
+  }
+  button[type = submit] {
+    margin-top: 48px;
+  }
+}
+
+.request-thanks {
+  .sec-hero {
+    p {
+      @include font-ud(medium);
+    }
+  }
+  .content {
+    width: 900px;
+    .hover-spacing-btn {
+      width: 256px;
+      margin-top: 68px;
+      font-size: 16px;
+      font-family: 'felix';
+      font-weight: normal;
+      margin-bottom: 0;
+    }
+    .hover-spacing-outline-btn {
+      @include font-ud(demibold);
+    }
+    .request-banner {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 80px;
+      a {
+        width: 274px;
+        height: 200px;
+        border-radius: 8px;
+        background-size: 100% 100%;
+        background-position: center;
+        position: relative;
+        flex-direction: column;
+        justify-content: flex-start;
+        color: white;
+        transition: all 0.2s;
+        h1 {
+          font-size: 18px;
+          letter-spacing: 0.1em;
+          margin-top: 48px;
+          @include font-ud(demibold);
+        }
+        p {
+          margin-top: 18px;
+          font-size: 13px;
+          letter-spacing: 0.1em;
+          @include font-ud(medium);         
+        }
+        &:hover {
+          opacity: 1;
+          background-size: 110% 110%;
+          h1 {
+            letter-spacing: 0.2em;
+          }
+        }
+        &:first-child {
+          background-image: url(../../images/request01.png);
+          &:hover {
+            background-image: url(../../images/request_hover01.png);
+          }
+        }
+        &:nth-child(2) {
+          background-image: url(../../images/request02.png);
+          &:hover {
+            background-image: url(../../images/request_hover02.png);
+          }
+        }
+        &:last-child {
+          background-image: url(../../images/request03.png);
+          &:hover {
+            background-image: url(../../images/request_hover03.png);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1250px) {
+
+  .request {
+    .content {
+      width: 800rem;
+    }
+  }
+
+  .request-address {
+    height: 80rem;
+    border-radius: 8rem;
+    font-size: 16rem;
+    margin-top: 76rem;
+    span {
+      &:first-child {
+        margin: 0 20rem;
+        font-size: 36rem;
+      }
+    }
+  }
+
+  .request-form {
+    width: 700rem;
+    margin-top: 54rem;
+    padding-bottom: 89rem;
+    .input-group {
+      margin-top: 29rem;
+      label {
+        font-size: 13rem;
+      }
+      input {
+        height: 52rem;
+        border-radius: 26rem;
+        padding: 11rem 24rem;
+        margin-top: 9rem;
+      }
+    }
+    .radio-group {
+      margin-top: 23rem;
+      .radio-container {
+        margin-top: 19rem;
+        padding: 4rem 45rem;
+        font-size: 13rem;
+        .checkmark {
+          top: 2rem;
+          width: 24rem;
+          height: 24rem;
+          border: 2rem solid $white;
+        }
+      }
+    }
+    .textarea-group {
+      textarea {
+        height: 240rem;
+        border-radius: 8rem;
+        margin-top: 8rem;
+        padding: 18rem 24rem;
+      }
+    }
+    .privacy {
+      font-size: 16rem;
+      margin-top: 70rem;
+      .radio-container {
+        padding: 4rem 37rem;
+      }
+    }
+    button[type = submit] {
+      margin-top: 48rem;
+    }
+  }
+
+  .request-thanks {
+    .content {
+      width: 900rem;
+      .hover-spacing-btn {
+        width: 256rem;
+        margin-top: 68rem;
+        font-size: 16rem;
+      }
+      .request-banner {
+        margin-top: 80rem;
+        a {
+          width: 274rem;
+          height: 200rem;
+          border-radius: 8rem;
+          h1 {
+            font-size: 18rem;
+            margin-top: 48rem;
+          }
+          p {
+            margin-top: 18rem;
+            font-size: 13rem;  
+          }
+        }
+      }
+    }
+  }
+    
+}
+
+@media (max-width: 750px) {
+  .request-header {
+    .slide-number {
+      left: 4rem!important;
+      font-size: 16px!important;
+    }
+  }
+
+  .request {
+    background-image: url(../../images/bg_request_sp.png);
+    .content {
+      width: 100%;
+    }
+  }
+
+  .request-address {
+    height: 138px;
+    border-radius: 8px;
+    font-size: 14px;
+    margin-top: 50px;
+    flex-direction: column;
+    span {
+      &:first-child {
+        margin: 16px 0;
+        font-size: 28px;
+        line-height: 1;
+      }
+      &:last-child {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .request-form {
+    width: 100%;
+    margin-top: 54px;
+    padding-bottom: 89px;
+    .input-group {
+      margin-top: 29px;
+      label {
+        font-size: 13px;
+        letter-spacing: 0.1em;
+      }
+      input {
+        width: 100%;
+        height: 52px;
+        border-radius: 26px;
+        padding: 11px 24px;
+        margin-top: 9px;
+      }
+    }
+    .radio-group {
+      margin-top: 23px;
+      .radio-container {
+        margin-top: 19px;
+        padding: 4px 45px;
+        font-size: 13px;
+        letter-spacing: 0.1em;
+        .checkmark {
+          top: 2px;
+          left: 0;
+          width: 24px;
+          height: 24px;
+          border: 2px solid $white;
+        }
+      }
+    }
+    .textarea-group {
+      textarea {
+        width: 100%;
+        height: 240px;
+        border-radius: 8px;
+        margin-top: 8px;
+        padding: 18px 24px;
+      }
+    }
+    .privacy {
+      font-size: 16px;
+      margin-top: 70px;
+      line-height: 37px;
+      .radio-container {
+        display: inline-block;
+        margin-top: 0;
+        padding: 4px 37px;
+        line-height: 1.5;
+      }
+    }
+    button[type = submit] {
+      margin-top: 48px;
+    }
+  }
+
+  .request-thanks {
+    .content {
+      width: 100%;
+      &:last-child {
+        padding-bottom: 160px;
+      }
+      .hover-spacing-btn {
+        width: 256px;
+        margin-top: 68px;
+        font-size: 16px;
+      }
+      .request-banner {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 60px;
+        a {
+          width: 255px;
+          height: 200px;
+          border-radius: 8px;
+          &:not(:first-child) {
+            margin-top: 40px;
+          }
+          h1 {
+            font-size: 18px;
+            margin-top: 53px;
+          }
+          p {
+            margin-top: 21px;
+            font-size: 13px;   
+          }
+        }
+      }
+    }
+  }
+    
+}

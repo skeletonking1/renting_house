@@ -1,0 +1,70 @@
+// -----------------------------------------------------------------------------
+// This file contains all @font-face declarations, if any.
+// -----------------------------------------------------------------------------
+
+@font-face {
+  font-family: felix;
+  src: url(../../font/FELIXTI.ttf);
+}
+
+@mixin font-ud($type: 'bold') {
+  @if ($type == 'demibold') {
+    font-family: fot-udkakugo-large-pr6n,sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  @if ($type == 'medium') {
+    font-family: fot-udkakugo-large-pr6n,sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  @if ($type == 'regular') {
+    font-family: fot-udkakugo-large-pr6n,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  @if ($type == 'light') {
+    font-family: fot-udkakugo-large-pr6n,sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+}
+@mixin font-din($type: 'regular') {
+  @if ($type == 'bold') {
+    font-family: din-2014, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  @if ($type == 'demibold') {
+    font-family: din-2014, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  @if ($type == 'medium') {
+    font-family: din-2014, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  @if ($type == 'regular') {
+    font-family: din-2014, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  @if ($type == 'light') {
+    font-family: din-2014, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+}
+@mixin font-tbud($type: 'regular') {
+  @if ($type == 'regular') {
+    font-family: tbudgothic-std, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+  }
+  @if ($type == 'bold') {
+    font-family: tbudgothic-std, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+  }
+}

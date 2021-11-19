@@ -1,0 +1,342 @@
+.works {
+  &-sec {
+    width: 736px!important;
+    .works-info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 36px;
+      &-left {
+        display: flex;
+        align-items: flex-start;
+      }
+      .works-investment {
+        padding: 4px 11px;
+        border-radius: 4px;
+        background: #506285;
+        font-size: 14px;
+        text-align: center;
+        @include font-tbud(bold);
+        color: white;
+        display: inline;
+      }
+      .client-name {
+        font-weight: normal;
+        font-size: 22px;
+        letter-spacing: 0.1em;
+        line-height: 36px;        
+        font-family: 'felix';
+        margin-left: 24px;
+      }
+      .works-date {
+        font-size: 11px;
+        letter-spacing: 0.15em;        
+        @include font-din(regular);
+      }
+    }
+    figure {
+      margin-top: 40px;
+      img {
+        width: 100%;
+      }
+    }
+    .works-content {
+      border-radius: 8px;
+      background: $white;
+      padding: 20px 40px;
+      text-align: left;
+      margin-top: 40px;
+      h2 {
+        font-size: 15px;
+        letter-spacing: 0.1em;
+        @include font-ud(demibold);
+      } 
+      table {
+        margin-top: 15px;
+        tr {
+          td {
+            padding: 10px 0;
+            &:first-child {
+              font-size: 13px;
+              color: #506285;
+              @include font-ud(demibold);           
+            }
+            &:last-child {
+              font-weight: normal;
+              font-size: 15px;              
+              font-family: 'felix';
+              padding-left: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+  &-list-sec {
+    width: 816px!important;
+    padding-top: 28px;
+    .article {
+      display: flex;
+      align-items: flex-start;
+      margin: 52px 0;
+      &-left {
+        width: 50%;
+        img {
+          width: 100%;
+        }
+      }
+      &-right {
+        width: 50%;
+        padding: 105px 0 0 40px;
+        h1, h2 {
+          font-weight: normal;
+          font-size: 22px;
+          letter-spacing: 0.1em;
+          line-height: 36px;
+          font-family: 'felix';
+        }
+        p {
+          margin-top: 32px;
+          font-size: 13px;
+          letter-spacing: 0.1em;
+          line-height: 28px;
+          font-family: 'felix';          
+        }
+      }
+    }
+  }
+  &-social {
+    width: 816px!important;
+    padding: 79px 0 40px;
+    font-family: 'felix';
+    font-weight: normal;
+    h1, h2 {
+      font-size: 22px;
+      letter-spacing: 0.1em;
+      line-height: 36px;
+    }
+    p {
+      margin-top: 32px;
+      font-size: 13px;
+      letter-spacing: 0.1em;
+      line-height: 28px;
+      padding-left: 250px;
+    }
+    img {
+      margin-top: 104px;
+    }
+  }
+}
+
+@media (max-width: 1250px) {
+  .works {
+    &-sec {
+      width: 736rem!important;
+      .works-info {
+        margin-top: 36rem;
+        .works-investment {
+          padding: 4rem 11rem;
+          border-radius: 4rem;
+          font-size: 14rem;
+        }
+        .client-name {
+          font-size: 22rem;
+          line-height: 36rem;        
+          margin-left: 24rem;
+        }
+        .works-date {
+          font-size: 11rem;
+        }
+      }
+      figure {
+        margin-top: 40rem;
+      }
+      .works-content {
+        border-radius: 8rem;
+        padding: 20rem 40rem;
+        margin-top: 40rem;
+        h2 {
+          font-size: 15rem;
+        } 
+        table {
+          margin-top: 15rem;
+          tr {
+            td {
+              padding: 10rem 0;
+              &:first-child {
+                font-size: 13rem;     
+              }
+              &:last-child {
+                font-size: 15rem;              
+                padding-left: 20rem;
+              }
+            }
+          }
+        }
+      }
+    }
+    &-list-sec {
+      width: 816rem!important;
+      padding-top: 28rem;
+      .article {
+        margin: 52rem 0;
+        &-right {
+          padding: 105rem 0 0 40rem;
+          h1, h2 {
+            font-size: 22rem;
+            line-height: 36rem;
+          }
+          p {
+            margin-top: 32rem;
+            font-size: 13rem;
+            line-height: 28rem;     
+          }
+        }
+      }
+    }
+    &-social {
+      width: 816rem!important;
+      padding: 79rem 0 40rem;
+      h1, h2 {
+        font-size: 22rem;
+        line-height: 36rem;
+      }
+      p {
+        margin-top: 32rem;
+        font-size: 13rem;
+        line-height: 28rem;
+        padding-left: 250rem;
+      }
+      img {
+        margin-top: 104rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  .works {
+    &-sec {
+      width: 100%!important;
+      .works-info {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column-reverse;
+        width: 255px;
+        margin: auto;
+        margin-top: 60px;
+        &-left {
+          margin-top: 12px;
+        }
+        .works-investment {
+          padding: 4px 11px;
+          border-radius: 4px;
+          font-size: 14px;
+        }
+        .client-name {
+          font-weight: normal;
+          font-size: 22px;
+          letter-spacing: 0.1em;
+          line-height: 36px;        
+          font-family: 'felix';
+          margin-left: 24px;
+        }
+        .works-date {
+          font-size: 11px;
+          letter-spacing: 0.15em;        
+          @include font-din(regular);
+        }
+      }
+      figure {
+        width: 255px;
+        margin: auto;
+        margin-top: 40px;
+        img {
+          width: 100%;
+        }
+      }
+      .works-content {
+        border-radius: 8px;
+        background: $white;
+        padding: 37px 24px;
+        text-align: left;
+        width: 255px;
+        margin: auto;
+        margin-top: 40px;
+        h2 {
+          font-size: 15px;
+          letter-spacing: 0.1em;
+          @include font-ud(demibold);
+        } 
+        table {
+          margin-top: 15px;
+          tr {
+            display: block;
+            td {
+              display: block;
+              padding: 10px 0;
+              &:first-child {
+                font-size: 13px;     
+              }
+              &:last-child {
+                font-size: 15px;              
+                padding-left: 0;
+                padding-top: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+    &-list-sec {
+      width: 100%!important;
+      padding-top: 28px;
+      .article {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 255px;
+        margin: 52px auto;
+        &-left {
+          width: 100%;
+          img {
+            width: 100%;
+          }
+        }
+        &-right {
+          width: 100%;
+          padding: 24px 0 0 0;
+          h1, h2 {
+            font-size: 22px;
+            line-height: 36px;
+          }
+          p {
+            margin-top: 32px;
+            font-size: 13px;
+            line-height: 28px;       
+          }
+        }
+      }
+    }
+    &-social {
+      width: 255px!important;
+      padding: 79px 0 40px;
+      margin: auto;
+      h1, h2 {
+        font-size: 22px;
+        letter-spacing: 0.1em;
+        line-height: 36px;
+      }
+      p {
+        margin-top: 32px;
+        font-size: 13px;
+        line-height: 28px;
+        padding-left: 0;
+      }
+      img {
+        margin-top: 104px;
+      }
+    }
+  }
+}

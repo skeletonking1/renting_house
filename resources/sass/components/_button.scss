@@ -1,0 +1,79 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  cursor: pointer;
+}
+
+.hover-spacing-btn {
+  width: 200px;
+  height: 56px;
+  border-radius: 28px;
+  background: #506285;
+  color: white;
+  position: relative;
+  margin: 32px 20px 40px;
+  font-size: 16px;
+  @include font-ud(demibold);
+  transition: all 0.2s;
+  img {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+  }
+  &:hover {
+    background: #4c92d9;
+    letter-spacing: 0.25em;
+  }
+}
+
+.hover-spacing-outline-btn {
+  border: 2px solid #506285;
+  background-color: transparent;
+  color: #506285;
+  @include font-ud(demibold);
+  &:hover {
+    background: rgba(255, 255, 255, 0.25);
+    letter-spacing: 0.25em;
+  }
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 1250px) {
+  .hover-spacing-btn {
+    width: 200rem;
+    height: 56rem;
+    border-radius: 28rem;
+    margin: 32rem 20rem 40rem;
+    font-size: 16rem;
+    img {
+      top: 24rem;
+      right: 24rem;
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  .hover-spacing-btn {
+    width: 200px;
+    height: 56px;
+    border-radius: 28px;
+    margin: 32px 20px 40px;
+    font-size: 16px;
+    transition: all 0.2s;
+    img {
+      top: 24px;
+      right: 24px;
+    }
+  }
+  
+}
